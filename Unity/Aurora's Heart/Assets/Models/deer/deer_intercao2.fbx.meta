@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: a0ccf2db37248da47a7c72f8ebbb2ca3
+timeCreated: 1497274561
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: "cabe\xE7a"
+    100004: "cabe\xE7a.001"
+    100006: "cabe\xE7a.001_end"
+    100008: //RootNode
+    100010: legD_F_control
+    100012: legD_T_control
+    100014: legE_F_control
+    100016: legE_t_control
+    100018: lombo_frente
+    100020: lombo_meio
+    100022: lombo_tras
+    100024: pernaD_baixoF
+    100026: pernaD_baixoF_end
+    100028: pernaD_baixoF_IK
+    100030: pernaD_baixoF_IK_end
+    100032: pernaD_baixoT
+    100034: pernaD_baixoT_end
+    100036: pernaD_baixoT_IK
+    100038: pernaD_baixoT_IK_end
+    100040: pernaD_cimaF
+    100042: pernaD_cimaT
+    100044: pernaD_cimaT_poletarget
+    100046: pernaD_cimaT_poletarget_end
+    100048: pernaE_baixoF
+    100050: pernaE_baixoF_end
+    100052: pernaE_baixoF_IK
+    100054: pernaE_baixoF_IK_end
+    100056: pernaE_baixoT
+    100058: pernaE_baixoT_end
+    100060: pernaE_baixoT_IK
+    100062: pernaE_baixoT_IK_end
+    100064: pernaE_cimaF
+    100066: pernaE_cimaF_poletarget
+    100068: pernaE_cimaF_poletarget.002
+    100070: pernaE_cimaF_poletarget.002_end
+    100072: pernaE_cimaF_poletarget_end
+    100074: pernaE_cimaT
+    100076: pernaE_cimaT_poletarget
+    100078: pernaE_cimaT_poletarget_end
+    100080: "pesco\xE7o"
+    100082: "p\xE9D_F"
+    100084: "p\xE9D_F_end"
+    100086: "p\xE9D_T"
+    100088: "p\xE9D_T_end"
+    100090: "p\xE9E_F"
+    100092: "p\xE9E_F_end"
+    100094: "p\xE9E_T"
+    100096: "p\xE9E_T_end"
+    100098: tornozeloD_F
+    100100: tornozeloD_T
+    100102: tornozeloE_F
+    100104: tornozeloE_T
+    100106: veado
+    400000: Armature
+    400002: "cabe\xE7a"
+    400004: "cabe\xE7a.001"
+    400006: "cabe\xE7a.001_end"
+    400008: //RootNode
+    400010: legD_F_control
+    400012: legD_T_control
+    400014: legE_F_control
+    400016: legE_t_control
+    400018: lombo_frente
+    400020: lombo_meio
+    400022: lombo_tras
+    400024: pernaD_baixoF
+    400026: pernaD_baixoF_end
+    400028: pernaD_baixoF_IK
+    400030: pernaD_baixoF_IK_end
+    400032: pernaD_baixoT
+    400034: pernaD_baixoT_end
+    400036: pernaD_baixoT_IK
+    400038: pernaD_baixoT_IK_end
+    400040: pernaD_cimaF
+    400042: pernaD_cimaT
+    400044: pernaD_cimaT_poletarget
+    400046: pernaD_cimaT_poletarget_end
+    400048: pernaE_baixoF
+    400050: pernaE_baixoF_end
+    400052: pernaE_baixoF_IK
+    400054: pernaE_baixoF_IK_end
+    400056: pernaE_baixoT
+    400058: pernaE_baixoT_end
+    400060: pernaE_baixoT_IK
+    400062: pernaE_baixoT_IK_end
+    400064: pernaE_cimaF
+    400066: pernaE_cimaF_poletarget
+    400068: pernaE_cimaF_poletarget.002
+    400070: pernaE_cimaF_poletarget.002_end
+    400072: pernaE_cimaF_poletarget_end
+    400074: pernaE_cimaT
+    400076: pernaE_cimaT_poletarget
+    400078: pernaE_cimaT_poletarget_end
+    400080: "pesco\xE7o"
+    400082: "p\xE9D_F"
+    400084: "p\xE9D_F_end"
+    400086: "p\xE9D_T"
+    400088: "p\xE9D_T_end"
+    400090: "p\xE9E_F"
+    400092: "p\xE9E_F_end"
+    400094: "p\xE9E_T"
+    400096: "p\xE9E_T_end"
+    400098: tornozeloD_F
+    400100: tornozeloD_T
+    400102: tornozeloE_F
+    400104: tornozeloE_T
+    400106: veado
+    4300000: veado
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: veado
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

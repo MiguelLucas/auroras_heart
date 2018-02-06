@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 733209648, guid: e0781e12b13132b45bf09c20fcd34d12, type: 3}
+  m_Name: BTEditorWindowState
+  m_EditorClassIdentifier: 
+  Version: 21
+  HolderNodes:
+  - AssetPath: .currentai
+    BehaviorTreeName: (No AI Selected)
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: .createxml
+    BehaviorTreeName: Create New Behavior Tree
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Attack.txt
+    BehaviorTreeName: Attack
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Guardian.txt
+    BehaviorTreeName: Guardian
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Holle.txt
+    BehaviorTreeName: Holle
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Leviathan.txt
+    BehaviorTreeName: Leviathan
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Spirit-back.txt
+    BehaviorTreeName: Spirit-back
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Spirit.txt
+    BehaviorTreeName: Spirit
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Wolf.txt
+    BehaviorTreeName: Wolf
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/WolfWorld.txt
+    BehaviorTreeName: WolfWorld
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/FireMen/FireCommander.txt
+    BehaviorTreeName: FireCommander
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/FireMen/FireMan.txt
+    BehaviorTreeName: FireMan
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/FireMen/FireTruck.txt
+    BehaviorTreeName: FireTruck
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Movement/ObstacleMovement.txt
+    BehaviorTreeName: ObstacleMovement
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Movement/OneWayMovement.txt
+    BehaviorTreeName: OneWayMovement
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Movement/SimpleMovement.txt
+    BehaviorTreeName: SimpleMovement
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Movement/WaypointMovement.txt
+    BehaviorTreeName: WaypointMovement
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Movement/WaypointPathMovement.txt
+    BehaviorTreeName: WaypointPathMovement
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/MultiNavMesh/RandomMovement.txt
+    BehaviorTreeName: RandomMovement
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Patrols/AudioWander.txt
+    BehaviorTreeName: AudioWander
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Patrols/PatrolAndFollow.txt
+    BehaviorTreeName: PatrolAndFollow
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Patrols/PointsOfInterest.txt
+    BehaviorTreeName: PointsOfInterest
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Patrols/WanderAndFlee.txt
+    BehaviorTreeName: WanderAndFlee
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  - AssetPath: Assets/AI/BehaviorTrees/Resources/LeviathanQuest.txt
+    BehaviorTreeName: LeviathanQuest
+    BehaviorTreeID: 0
+    LastUpdate: 0
+    LastModified: 0
+    Errored: 0
+  TreeState:
+    _branchRepo:
+    - _fields: []
+      _type: 0
+      _stateIndex: 0
+      _parent: 0
+      _lastUpdate: 0
+      _children: 
+      _variables: 
+      _focused: 0
+    _freeList: 

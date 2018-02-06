@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 936362aacef7fce40a41e279cb135138
+timeCreated: 1497348556
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: "cabe\xE7a"
+    100004: "cabe\xE7a.001"
+    100006: "cabe\xE7a.001_end"
+    100008: Camera
+    100010: //RootNode
+    100012: legD_F_control
+    100014: legD_T_control
+    100016: legE_F_control
+    100018: legE_t_control
+    100020: lombo_frente
+    100022: lombo_meio
+    100024: lombo_tras
+    100026: pernaD_baixoF
+    100028: pernaD_baixoF_end
+    100030: pernaD_baixoF_IK
+    100032: pernaD_baixoF_IK_end
+    100034: pernaD_baixoT
+    100036: pernaD_baixoT_end
+    100038: pernaD_baixoT_IK
+    100040: pernaD_baixoT_IK_end
+    100042: pernaD_cimaF
+    100044: pernaD_cimaT
+    100046: pernaD_cimaT_poletarget
+    100048: pernaD_cimaT_poletarget_end
+    100050: pernaE_baixoF
+    100052: pernaE_baixoF_end
+    100054: pernaE_baixoF_IK
+    100056: pernaE_baixoF_IK_end
+    100058: pernaE_baixoT
+    100060: pernaE_baixoT_end
+    100062: pernaE_baixoT_IK
+    100064: pernaE_baixoT_IK_end
+    100066: pernaE_cimaF
+    100068: pernaE_cimaF_poletarget
+    100070: pernaE_cimaF_poletarget.002
+    100072: pernaE_cimaF_poletarget.002_end
+    100074: pernaE_cimaF_poletarget_end
+    100076: pernaE_cimaT
+    100078: pernaE_cimaT_poletarget
+    100080: pernaE_cimaT_poletarget_end
+    100082: "pesco\xE7o"
+    100084: "p\xE9D_F"
+    100086: "p\xE9D_F_end"
+    100088: "p\xE9D_T"
+    100090: "p\xE9D_T_end"
+    100092: "p\xE9E_F"
+    100094: "p\xE9E_F_end"
+    100096: "p\xE9E_T"
+    100098: "p\xE9E_T_end"
+    100100: Sun
+    100102: tornozeloD_F
+    100104: tornozeloD_T
+    100106: tornozeloE_F
+    100108: tornozeloE_T
+    100110: veado
+    400000: Armature
+    400002: "cabe\xE7a"
+    400004: "cabe\xE7a.001"
+    400006: "cabe\xE7a.001_end"
+    400008: Camera
+    400010: //RootNode
+    400012: legD_F_control
+    400014: legD_T_control
+    400016: legE_F_control
+    400018: legE_t_control
+    400020: lombo_frente
+    400022: lombo_meio
+    400024: lombo_tras
+    400026: pernaD_baixoF
+    400028: pernaD_baixoF_end
+    400030: pernaD_baixoF_IK
+    400032: pernaD_baixoF_IK_end
+    400034: pernaD_baixoT
+    400036: pernaD_baixoT_end
+    400038: pernaD_baixoT_IK
+    400040: pernaD_baixoT_IK_end
+    400042: pernaD_cimaF
+    400044: pernaD_cimaT
+    400046: pernaD_cimaT_poletarget
+    400048: pernaD_cimaT_poletarget_end
+    400050: pernaE_baixoF
+    400052: pernaE_baixoF_end
+    400054: pernaE_baixoF_IK
+    400056: pernaE_baixoF_IK_end
+    400058: pernaE_baixoT
+    400060: pernaE_baixoT_end
+    400062: pernaE_baixoT_IK
+    400064: pernaE_baixoT_IK_end
+    400066: pernaE_cimaF
+    400068: pernaE_cimaF_poletarget
+    400070: pernaE_cimaF_poletarget.002
+    400072: pernaE_cimaF_poletarget.002_end
+    400074: pernaE_cimaF_poletarget_end
+    400076: pernaE_cimaT
+    400078: pernaE_cimaT_poletarget
+    400080: pernaE_cimaT_poletarget_end
+    400082: "pesco\xE7o"
+    400084: "p\xE9D_F"
+    400086: "p\xE9D_F_end"
+    400088: "p\xE9D_T"
+    400090: "p\xE9D_T_end"
+    400092: "p\xE9E_F"
+    400094: "p\xE9E_F_end"
+    400096: "p\xE9E_T"
+    400098: "p\xE9E_T_end"
+    400100: Sun
+    400102: tornozeloD_F
+    400104: tornozeloD_T
+    400106: tornozeloE_F
+    400108: tornozeloE_T
+    400110: veado
+    4300000: veado
+    7400000: Walk
+    9500000: //RootNode
+    13700000: veado
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/legD_F_control
+        weight: 1
+      - path: Armature/legD_F_control/pernaD_baixoF_IK
+        weight: 1
+      - path: Armature/legD_F_control/pernaD_baixoF_IK/pernaD_baixoF_IK_end
+        weight: 1
+      - path: Armature/legD_F_control/tornozeloD_F
+        weight: 1
+      - path: "Armature/legD_F_control/tornozeloD_F/p\xE9D_F"
+        weight: 1
+      - path: "Armature/legD_F_control/tornozeloD_F/p\xE9D_F/p\xE9D_F_end"
+        weight: 1
+      - path: Armature/legD_T_control
+        weight: 1
+      - path: Armature/legD_T_control/pernaD_baixoT_IK
+        weight: 1
+      - path: Armature/legD_T_control/pernaD_baixoT_IK/pernaD_baixoT_IK_end
+        weight: 1
+      - path: Armature/legD_T_control/tornozeloD_T
+        weight: 1
+      - path: "Armature/legD_T_control/tornozeloD_T/p\xE9D_T"
+        weight: 1
+      - path: "Armature/legD_T_control/tornozeloD_T/p\xE9D_T/p\xE9D_T_end"
+        weight: 1
+      - path: Armature/legE_F_control
+        weight: 1
+      - path: Armature/legE_F_control/pernaE_baixoF_IK
+        weight: 1
+      - path: Armature/legE_F_control/pernaE_baixoF_IK/pernaE_baixoF_IK_end
+        weight: 1
+      - path: Armature/legE_F_control/tornozeloE_F
+        weight: 1
+      - path: "Armature/legE_F_control/tornozeloE_F/p\xE9E_F"
+        weight: 1
+      - path: "Armature/legE_F_control/tornozeloE_F/p\xE9E_F/p\xE9E_F_end"
+        weight: 1
+      - path: Armature/legE_t_control
+        weight: 1
+      - path: Armature/legE_t_control/pernaE_baixoT_IK
+        weight: 1
+      - path: Armature/legE_t_control/pernaE_baixoT_IK/pernaE_baixoT_IK_end
+        weight: 1
+      - path: Armature/legE_t_control/tornozeloE_T
+        weight: 1
+      - path: "Armature/legE_t_control/tornozeloE_T/p\xE9E_T"
+        weight: 1
+      - path: "Armature/legE_t_control/tornozeloE_T/p\xE9E_T/p\xE9E_T_end"
+        weight: 1
+      - path: Armature/lombo_tras
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio/lombo_frente
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio/lombo_frente/pernaD_cimaF
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio/lombo_frente/pernaD_cimaF/pernaD_baixoF
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio/lombo_frente/pernaD_cimaF/pernaD_baixoF/pernaD_baixoF_end
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio/lombo_frente/pernaE_cimaF
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio/lombo_frente/pernaE_cimaF/pernaE_baixoF
+        weight: 1
+      - path: Armature/lombo_tras/lombo_meio/lombo_frente/pernaE_cimaF/pernaE_baixoF/pernaE_baixoF_end
+        weight: 1
+      - path: "Armature/lombo_tras/lombo_meio/lombo_frente/pesco\xE7o"
+        weight: 1
+      - path: "Armature/lombo_tras/lombo_meio/lombo_frente/pesco\xE7o/cabe\xE7a"
+        weight: 1
+      - path: "Armature/lombo_tras/lombo_meio/lombo_frente/pesco\xE7o/cabe\xE7a/cabe\xE7a.001"
+        weight: 1
+      - path: "Armature/lombo_tras/lombo_meio/lombo_frente/pesco\xE7o/cabe\xE7a/cabe\xE7a.001/cabe\xE7a.001_end"
+        weight: 1
+      - path: Armature/lombo_tras/pernaD_cimaT
+        weight: 1
+      - path: Armature/lombo_tras/pernaD_cimaT/pernaD_baixoT
+        weight: 1
+      - path: Armature/lombo_tras/pernaD_cimaT/pernaD_baixoT/pernaD_baixoT_end
+        weight: 1
+      - path: Armature/lombo_tras/pernaE_cimaT
+        weight: 1
+      - path: Armature/lombo_tras/pernaE_cimaT/pernaE_baixoT
+        weight: 1
+      - path: Armature/lombo_tras/pernaE_cimaT/pernaE_baixoT/pernaE_baixoT_end
+        weight: 1
+      - path: Armature/pernaD_cimaT_poletarget
+        weight: 1
+      - path: Armature/pernaD_cimaT_poletarget/pernaD_cimaT_poletarget_end
+        weight: 1
+      - path: Armature/pernaE_cimaF_poletarget
+        weight: 1
+      - path: Armature/pernaE_cimaF_poletarget/pernaE_cimaF_poletarget_end
+        weight: 1
+      - path: Armature/pernaE_cimaF_poletarget.002
+        weight: 1
+      - path: Armature/pernaE_cimaF_poletarget.002/pernaE_cimaF_poletarget.002_end
+        weight: 1
+      - path: Armature/pernaE_cimaT_poletarget
+        weight: 1
+      - path: Armature/pernaE_cimaT_poletarget/pernaE_cimaT_poletarget_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Sun
+        weight: 1
+      - path: veado
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

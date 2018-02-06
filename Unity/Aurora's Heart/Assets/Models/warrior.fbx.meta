@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 48c8bff67cfe92f48990126ab42e6ddb
+timeCreated: 1496659764
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: "antebra\xE7o direito"
+    100002: "antebra\xE7o esquerdo"
+    100004: Armature
+    100006: Bone
+    100008: Bone_end
+    100010: "Bonebra\xE7o equerdo"
+    100012: "bra\xE7o direito"
+    100014: calcanhar direito
+    100016: calcanhar esquerdo
+    100018: Camera
+    100020: corpo
+    100022: costas
+    100024: dedo direito
+    100026: dedo direito_end
+    100028: dedo esquerdo
+    100030: dedo esquerdo_end
+    100032: //RootNode
+    100034: "m\xE3o direita"
+    100036: "m\xE3o direita_end"
+    100038: "m\xE3o esquerda"
+    100040: "m\xE3o esquerda_end"
+    100042: ombro direito
+    100044: ombro esquerdo
+    100046: perna 1 direita
+    100048: perna 1 esquerda
+    100050: perna 2 direita
+    100052: pernaa 2 esquerda
+    100054: "p\xE9 direito"
+    100056: "p\xE9 direito_end"
+    100058: "p\xE9 esquerdo"
+    100060: "p\xE9 esquerdo_end"
+    100062: Sun
+    100064: Sun.001
+    400000: "antebra\xE7o direito"
+    400002: "antebra\xE7o esquerdo"
+    400004: Armature
+    400006: Bone
+    400008: Bone_end
+    400010: "Bonebra\xE7o equerdo"
+    400012: "bra\xE7o direito"
+    400014: calcanhar direito
+    400016: calcanhar esquerdo
+    400018: Camera
+    400020: corpo
+    400022: costas
+    400024: dedo direito
+    400026: dedo direito_end
+    400028: dedo esquerdo
+    400030: dedo esquerdo_end
+    400032: //RootNode
+    400034: "m\xE3o direita"
+    400036: "m\xE3o direita_end"
+    400038: "m\xE3o esquerda"
+    400040: "m\xE3o esquerda_end"
+    400042: ombro direito
+    400044: ombro esquerdo
+    400046: perna 1 direita
+    400048: perna 1 esquerda
+    400050: perna 2 direita
+    400052: pernaa 2 esquerda
+    400054: "p\xE9 direito"
+    400056: "p\xE9 direito_end"
+    400058: "p\xE9 esquerdo"
+    400060: "p\xE9 esquerdo_end"
+    400062: Sun
+    400064: Sun.001
+    4300000: corpo
+    7400000: Armature|ArmatureAction.004
+    9500000: //RootNode
+    13700000: corpo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
