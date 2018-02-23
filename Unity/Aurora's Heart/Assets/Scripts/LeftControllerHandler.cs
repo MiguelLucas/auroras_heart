@@ -96,11 +96,11 @@
 
             if (grabber.GetGrabbedObject() != null) {
                 if (grabber.GetGrabbedObject().tag == "Torch") {
-                    if (player.TorchFireCounter > player.TorchFireRate && GameManager.gameManager.Spirits > 0) {
+                    if (player.TorchFireCounter > player.TorchFireRate && GameManager.instance.Spirits > 0) {
                         player.TorchFireCounter = 0;
                         player.useSpirit();
                     }
-                    if (GameManager.gameManager.Spirits <= 0) {
+                    if (GameManager.instance.Spirits <= 0) {
                         grabber.GetGrabbedObject().transform.Find("Torchfire").gameObject.SetActive(false);
                     }
                 }

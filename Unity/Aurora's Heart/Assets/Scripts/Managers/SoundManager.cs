@@ -5,9 +5,10 @@ using AC.TimeOfDaySystemFree;
 
 public class SoundManager : MonoBehaviour {
 
+    public static SoundManager instance = null;
+
     [SerializeField]
     TimeOfDayManager time;
-
 
     [SerializeField]
     private int currentScene = 1;
@@ -280,6 +281,13 @@ public class SoundManager : MonoBehaviour {
         set {
             deerTalks = value;
         }
+    }
+
+    private void Awake() {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
     }
 
     // Use this for initialization

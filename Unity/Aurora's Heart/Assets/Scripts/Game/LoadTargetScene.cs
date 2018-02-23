@@ -24,7 +24,8 @@ public class LoadTargetScene : MonoBehaviour {
         for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
             print("Scene -> " + SceneManager.GetSceneByBuildIndex(i).name);
 
-        GameManager.gameManager.changePlayerPositionFromForestToCave();
+        //TODO
+        //GameManager.instance.changePlayerPositionFromForestToCave();
 
     }
 }

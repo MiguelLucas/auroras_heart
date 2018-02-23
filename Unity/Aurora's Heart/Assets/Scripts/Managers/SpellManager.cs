@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class SpellManager : MonoBehaviour {
 
+    public static SpellManager instance = null;
+
     [SerializeField]
     private List<Spell> spellList = new List<Spell>();
 
     private int currentSpell = 0;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
 
     void Start() {
 

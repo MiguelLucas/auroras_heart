@@ -137,12 +137,13 @@ public class Player : Character {
 
     public void createSpiritLight(Transform transform) {
 
-        if (GameManager.gameManager.Spirits > 0) {
+        if (GameManager.instance.Spirits > 0) {
 
-            GameObject newSpirit = GameManager.gameManager.SpiritObject.gameObject;
-            newSpirit.transform.position = transform.position + (transform.forward * 2);
+            //TODO
+            //GameObject newSpirit = GameManager.instance.SpiritObject.gameObject;
+            /*newSpirit.transform.position = transform.position + (transform.forward * 2);
             newSpirit.SetActive(true);
-            Instantiate(newSpirit);
+            Instantiate(newSpirit);*/
 
             useSpirit();
         }
@@ -206,71 +207,71 @@ public class Player : Character {
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "Mushroom") {
-            int index = chooseRandomSound(SoundManager.soundManager.MushroomSounds.Length, previousMushroomSound);
+            int index = chooseRandomSound(SoundManager.instance.MushroomSounds.Length, previousMushroomSound);
             if (index < 0) {
                 return;
             }
             previousMushroomSound = index;
             print("colisão mushroom " + index);
-            audioSource.PlayOneShot(SoundManager.soundManager.MushroomSounds[index]);
+            audioSource.PlayOneShot(SoundManager.instance.MushroomSounds[index]);
         }
 
         if (other.tag == "Bridge") {
-            int index = chooseRandomSound(SoundManager.soundManager.DiscoverySounds.Length, previousBridgeSound);
+            int index = chooseRandomSound(SoundManager.instance.DiscoverySounds.Length, previousBridgeSound);
             if (index < 0) {
                 return;
             }
             previousBridgeSound = index;
             print("colisão bridge " + index);
-            audioSource.PlayOneShot(SoundManager.soundManager.DiscoverySounds[index]);
+            audioSource.PlayOneShot(SoundManager.instance.DiscoverySounds[index]);
         }
 
         if (other.tag == "Lamp") {
-            int index = chooseRandomSound(SoundManager.soundManager.LanternSounds.Length, previousLanternSound);
+            int index = chooseRandomSound(SoundManager.instance.LanternSounds.Length, previousLanternSound);
             if (index < 0) {
                 return;
             }
             previousLanternSound = index;
             print("colisão lantern " + index);
-            audioSource.PlayOneShot(SoundManager.soundManager.LanternSounds[index]);
+            audioSource.PlayOneShot(SoundManager.instance.LanternSounds[index]);
         }
 
         if (other.tag == "Yggdrasil, Ruins, Cave") {
-            int index = chooseRandomSound(SoundManager.soundManager.MysterySounds.Length, previousMysterySound);
+            int index = chooseRandomSound(SoundManager.instance.MysterySounds.Length, previousMysterySound);
             if (index < 0) {
                 return;
             }
             previousMysterySound = index;
             print("colisão mystery " + index);
-            audioSource.PlayOneShot(SoundManager.soundManager.MysterySounds[index]);
+            audioSource.PlayOneShot(SoundManager.instance.MysterySounds[index]);
         }
 
         if (other.tag == "Village") {
             print("Changing to village ambient sound");
-            SoundManager.soundManager.enterVillage();
+            SoundManager.instance.enterVillage();
         }
     }
 
     private void OnTriggerExit(Collider other) {
         if (other.tag == "Village") {
             print("Exiting village ambient sound");
-            SoundManager.soundManager.exitVillage();
+            SoundManager.instance.exitVillage();
         }
     }
 
     public AudioClip getSpellSound(string type) {
         if (type == "Ice") {
-            int index = chooseRandomSound(SoundManager.soundManager.IceSpellSounds.Length, previousIceSpellSound);
+            int index = chooseRandomSound(SoundManager.instance.IceSpellSounds.Length, previousIceSpellSound);
             previousIceSpellSound = index;
             print("A disparar iceSpell " + index);
-            return SoundManager.soundManager.IceSpellSounds[index];
+            return SoundManager.instance.IceSpellSounds[index];
         }
 
         if (type == "Fire") {
-            int index = chooseRandomSound(SoundManager.soundManager.FireSpellSounds.Length, previousFireSpellSound);
+            int index = chooseRandomSound(SoundManager.instance.FireSpellSounds.Length, previousFireSpellSound);
             previousFireSpellSound = index;
             print("A disparar fireSpell " + index);
-            return SoundManager.soundManager.FireSpellSounds[index];
+            return SoundManager.instance.FireSpellSounds[index];
         }
 
         return null;
@@ -278,29 +279,29 @@ public class Player : Character {
     }
 
     public void playWalkSound() {
-        if (GameManager.gameManager.CurrentScene != SceneType.Cave) {
-            int index = chooseRandomSound(SoundManager.soundManager.WalkSounds.Length, previousWalkSound);
+        if (GameManager.instance.CurrentScene != 2/*SceneType.Cave*/) {
+            int index = chooseRandomSound(SoundManager.instance.WalkSounds.Length, previousWalkSound);
             if (index < 0) {
                 return;
             }
             //print("Walk sound " + index);
             previousWalkSound = index;
-            audioSource.PlayOneShot(SoundManager.soundManager.WalkSounds[index]);
+            audioSource.PlayOneShot(SoundManager.instance.WalkSounds[index]);
         }
         
     }
 
     public void playFootstepSound() {
-        if (GameManager.gameManager.CurrentScene == SceneType.Forest) {
-            int index = chooseRandomSound(SoundManager.soundManager.FootstepSounds.Length, previousFootstepSound);
+        if (GameManager.instance.CurrentScene == 1/*SceneType.Forest*/) {
+            int index = chooseRandomSound(SoundManager.instance.FootstepSounds.Length, previousFootstepSound);
             //print("Footstep sound " + index);
             previousFootstepSound = index;
-            audioSource.PlayOneShot(SoundManager.soundManager.FootstepSounds[index]);
-        } else if (GameManager.gameManager.CurrentScene == SceneType.Cave) {
-            int index = chooseRandomSound(SoundManager.soundManager.CaveFootstepSounds.Length, previousCaveFootstepSound);
+            audioSource.PlayOneShot(SoundManager.instance.FootstepSounds[index]);
+        } else if (GameManager.instance.CurrentScene == 3/*SceneType.Cave*/) {
+            int index = chooseRandomSound(SoundManager.instance.CaveFootstepSounds.Length, previousCaveFootstepSound);
             //print("Footstep sound " + index);
             previousCaveFootstepSound = index;
-            audioSource.PlayOneShot(SoundManager.soundManager.CaveFootstepSounds[index]);
+            audioSource.PlayOneShot(SoundManager.instance.CaveFootstepSounds[index]);
         }
         
     }
@@ -320,8 +321,8 @@ public class Player : Character {
         float minDistance = float.MaxValue;
         int newWaterSource = 0;
 
-        for (int i = 0; i < SoundManager.soundManager.WaterSoundPoints.Length; i++) {
-            float distance = Vector3.Distance(transform.position, SoundManager.soundManager.WaterSoundPoints[i].transform.position);
+        for (int i = 0; i < SoundManager.instance.WaterSoundPoints.Length; i++) {
+            float distance = Vector3.Distance(transform.position, SoundManager.instance.WaterSoundPoints[i].transform.position);
             if (distance < minDistance) {
                 minDistance = distance;
                 newWaterSource = i;
@@ -329,97 +330,97 @@ public class Player : Character {
         }
 
         if (previousWaterSource != newWaterSource) {
-            SoundManager.soundManager.WaterSoundSource.transform.position = SoundManager.soundManager.WaterSoundPoints[newWaterSource].transform.position;
-            GvrAudioSource audioSource = SoundManager.soundManager.WaterSoundSource.GetComponent<GvrAudioSource>();
+            SoundManager.instance.WaterSoundSource.transform.position = SoundManager.instance.WaterSoundPoints[newWaterSource].transform.position;
+            GvrAudioSource audioSource = SoundManager.instance.WaterSoundSource.GetComponent<GvrAudioSource>();
             audioSource.Play();
         }
     }
 
     public void caughtMushroom() {
-        GameManager.gameManager.Mushrooms++;
-        mushroomText.text = GameManager.gameManager.Mushrooms.ToString();
+        GameManager.instance.Mushrooms++;
+        mushroomText.text = GameManager.instance.Mushrooms.ToString();
     }
 
     public void caughtScroll() {
-        GameManager.gameManager.Scrolls++;
-        scrollText.text = GameManager.gameManager.Scrolls.ToString();
+        GameManager.instance.Scrolls++;
+        scrollText.text = GameManager.instance.Scrolls.ToString();
     }
 
     public void useMushroom() {
-        GameManager.gameManager.Mushrooms--;
-        mushroomText.text = GameManager.gameManager.Mushrooms.ToString();
+        GameManager.instance.Mushrooms--;
+        mushroomText.text = GameManager.instance.Mushrooms.ToString();
     }
 
     public void useScroll() {
-        GameManager.gameManager.Scrolls--;
-        scrollText.text = GameManager.gameManager.Scrolls.ToString();
+        GameManager.instance.Scrolls--;
+        scrollText.text = GameManager.instance.Scrolls.ToString();
     }
 
     public AudioClip playClimbSound() {
-        int index = chooseRandomSound(SoundManager.soundManager.ClimbSounds.Length, previousClimbSound);
+        int index = chooseRandomSound(SoundManager.instance.ClimbSounds.Length, previousClimbSound);
         previousClimbSound = index;
         int rnd = Random.Range(0, 100);
         if (rnd <= rockFallPercentage) {
             playRockFallSound();
         }
-        return SoundManager.soundManager.ClimbSounds[index];
+        return SoundManager.instance.ClimbSounds[index];
         
     }
 
     public void playRockFallSound() {
-        int index = chooseRandomSound(SoundManager.soundManager.RockFallSounds.Length, previousRockFallSound);
+        int index = chooseRandomSound(SoundManager.instance.RockFallSounds.Length, previousRockFallSound);
         previousRockFallSound = index;
-        audioSource.PlayOneShot(SoundManager.soundManager.RockFallSounds[index]);
+        audioSource.PlayOneShot(SoundManager.instance.RockFallSounds[index]);
     }
 
     public AudioClip playGrabChestSound() {
-        return SoundManager.soundManager.ChestSounds[0];
+        return SoundManager.instance.ChestSounds[0];
     }
 
     public AudioClip playOpenChestSound() {
-        return SoundManager.soundManager.ChestSounds[1];
+        return SoundManager.instance.ChestSounds[1];
     }
 
     public AudioClip playGrabScrollSound() {
-        return SoundManager.soundManager.ChestSounds[2];
+        return SoundManager.instance.ChestSounds[2];
     }
 
     public AudioClip playTorchDropSound() {
-        return SoundManager.soundManager.TorchDropSound;
+        return SoundManager.instance.TorchDropSound;
     }
 
     public void selectIceSpell() {
-        SpellManager.spellManager.CurrentSpell = 0;
+        SpellManager.instance.CurrentSpell = 0;
     }
 
     public void selectFireSpell() {
-        SpellManager.spellManager.CurrentSpell = 1;
+        SpellManager.instance.CurrentSpell = 1;
     }
 
     public AudioClip castSpell(Transform controllerPosition) {
 
-        if (currentMana >= SpellManager.spellManager.SpellList[SpellManager.spellManager.CurrentSpell].ManaCost) {
-            SpellManager.spellManager.CastMagic(controllerPosition);
-            currentMana -= SpellManager.spellManager.SpellList[SpellManager.spellManager.CurrentSpell].ManaCost;
+        if (currentMana >= SpellManager.instance.SpellList[SpellManager.instance.CurrentSpell].ManaCost) {
+            SpellManager.instance.CastMagic(controllerPosition);
+            currentMana -= SpellManager.instance.SpellList[SpellManager.instance.CurrentSpell].ManaCost;
             updateManaUI();
 
-            if (SpellManager.spellManager.CurrentSpell == 0) {
-                int index = chooseRandomSound(SoundManager.soundManager.IceSpellSounds.Length, previousIceSpellSound);
+            if (SpellManager.instance.CurrentSpell == 0) {
+                int index = chooseRandomSound(SoundManager.instance.IceSpellSounds.Length, previousIceSpellSound);
                 previousIceSpellSound = index;
-                return SoundManager.soundManager.IceSpellSounds[index];
+                return SoundManager.instance.IceSpellSounds[index];
             }
 
-            if (SpellManager.spellManager.CurrentSpell == 1) {
-                int index = chooseRandomSound(SoundManager.soundManager.FireSpellSounds.Length, previousFireSpellSound);
+            if (SpellManager.instance.CurrentSpell == 1) {
+                int index = chooseRandomSound(SoundManager.instance.FireSpellSounds.Length, previousFireSpellSound);
                 previousFireSpellSound = index;
-                return SoundManager.soundManager.FireSpellSounds[index];
+                return SoundManager.instance.FireSpellSounds[index];
             }
         }
         return null;
     }
 
     public void grabSkuldRune() {
-        GameManager.gameManager.CaveReward();
+        GameManager.instance.CaveReward();
         updateRuneUI();
     }
 
@@ -434,12 +435,12 @@ public class Player : Character {
     }
 
     public void updateRuneUI() {
-        runeText.text = GameManager.gameManager.Runes.ToString();
+        runeText.text = GameManager.instance.Runes.ToString();
     }
 
     public void useSpirit() {
-        GameManager.gameManager.Spirits--;
-        spiritText.text = GameManager.gameManager.Spirits.ToString();
+        GameManager.instance.Spirits--;
+        spiritText.text = GameManager.instance.Spirits.ToString();
     }
 
     public void playTalk(string person, int index) {
@@ -447,16 +448,16 @@ public class Player : Character {
         print(person + " talking " + index);
         switch (person) {
             case "Freya":
-                audioSource.PlayOneShot(SoundManager.soundManager.GirlTalks[index]);
+                audioSource.PlayOneShot(SoundManager.instance.GirlTalks[index]);
                 break;
             case "Druid":
-                audioSource.PlayOneShot(SoundManager.soundManager.DruidTalks[index]);
+                audioSource.PlayOneShot(SoundManager.instance.DruidTalks[index]);
                 break;
             case "Leviathan":
-                audioSource.PlayOneShot(SoundManager.soundManager.LeviathanTalks[index]);
+                audioSource.PlayOneShot(SoundManager.instance.LeviathanTalks[index]);
                 break;
             case "Holle":
-                audioSource.PlayOneShot(SoundManager.soundManager.DeerTalks[index]);
+                audioSource.PlayOneShot(SoundManager.instance.DeerTalks[index]);
                 break;
         }
     }

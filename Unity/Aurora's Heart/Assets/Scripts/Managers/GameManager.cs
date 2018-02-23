@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+    public static GameManager instance = null;
+
     [SerializeField]
     private int spirits;
     [SerializeField]
@@ -86,6 +88,13 @@ public class GameManager : MonoBehaviour {
         set {
             currentScene = value;
         }
+    }
+
+    private void Awake() {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
     }
 
     // Use this for initialization
