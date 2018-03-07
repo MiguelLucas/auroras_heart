@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RAIN.Core;
 using System;
 
 public class WolfAI : MonoBehaviour {
@@ -63,11 +62,6 @@ public class WolfAI : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-		//Get wolf AI rig
-		AIRig tRig = GetComponentInChildren<AIRig>();
-
-		//Change state of memory
-		tRig.AI.WorkingMemory.SetItem<System.Boolean>("Wait", wait);
 
 	}
 

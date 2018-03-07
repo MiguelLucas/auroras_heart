@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RAIN.Core;
 
 public class HolleInteraction : Interaction {
 
     private int state = 0;
     private HolleQuestDialogue dialogueQuest = new HolleQuestDialogue();
-    private AIRig tRig;
     private bool complete = false;
     private bool talk = false;
 
@@ -27,13 +25,7 @@ public class HolleInteraction : Interaction {
 
     void Start()
     {
-        //Get leviathan AI rig
-        tRig = GetComponentInChildren<AIRig>();
-
-        //Change state of memory
-        tRig.AI.WorkingMemory.SetItem<System.Boolean>("Complete", complete);
-        //Change state of memory
-        tRig.AI.WorkingMemory.SetItem<System.Boolean>("Talk", false);
+       
     }
 
     void Update()
@@ -47,10 +39,8 @@ public class HolleInteraction : Interaction {
             talk = false;
         if (Dialogue.Finished) //Update values of AI
         {
-            //Change state of memory
-            tRig.AI.WorkingMemory.SetItem<System.Boolean>("Complete", complete);
+           
         }
-        tRig.AI.WorkingMemory.SetItem<System.Boolean>("Talk", talk);
     }
 
     protected override void OnInteract()

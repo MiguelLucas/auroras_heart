@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RAIN.Core;
 
 public class LeviathanInteraction : Interaction {
 
     private int state = 0;
     private LeviathanQuestDialogue dialogueQuest = new LeviathanQuestDialogue();
-    private AIRig tRig;
     private bool wait = true;
     private float startWalking = 0f;
     private float lookAroundAfterSecs = 10f; // 5 = two seconds
@@ -29,13 +27,6 @@ public class LeviathanInteraction : Interaction {
     // Use this for initialization
     void Start () {
 
-        //Get leviathan AI rig
-         tRig = GetComponentInChildren<AIRig>();
-
-        //Change state of memory
-        tRig.AI.WorkingMemory.SetItem<System.Boolean>("Wait", wait);
-        tRig.AI.WorkingMemory.SetItem<System.Boolean>("Look", LookAround);
-
     }
 	
 	// Update is called once per frame
@@ -53,10 +44,6 @@ public class LeviathanInteraction : Interaction {
         {
             StopToLookAround();
         }
-
-        //Change state of memory
-        tRig.AI.WorkingMemory.SetItem<System.Boolean>("Wait", wait);
-        tRig.AI.WorkingMemory.SetItem<System.Boolean>("Look", LookAround);
 
     }
 
