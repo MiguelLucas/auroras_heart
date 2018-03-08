@@ -3,24 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Fire
-  - shield
-  - explosion
-  - Day
-  - Night
-  - Mushroom
-  - TeleportIgnore
-  - Bridge
-  - Lamp
-  - ItemToKeep
-  - Enemy
-  - Chest
-  - Scroll
-  - Village
-  - Torch
-  - SkuldRune
-  - RockClimb
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -31,14 +14,14 @@ TagManager:
   - 
   - 
   - 
-  - Player
-  - 
-  - 
-  - Sounds
   - 
   - 
   - 
-  - Interactable
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -55,9 +38,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: UI
-    uniqueID: 3759875335
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
