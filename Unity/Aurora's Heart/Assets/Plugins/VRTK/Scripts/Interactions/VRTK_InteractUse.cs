@@ -259,7 +259,8 @@ namespace VRTK
 
         protected virtual bool IsObjectUsable(GameObject obj)
         {
-            return (interactTouch.IsObjectInteractable(obj) && obj.GetComponent<VRTK_InteractableObject>().isUsable);
+            VRTK_InteractableObject objScript = (obj != null ? obj.GetComponent<VRTK_InteractableObject>() : null);
+            return (obj != null && interactTouch != null && interactTouch.IsObjectInteractable(obj) && objScript != null && objScript.isUsable);
         }
 
         protected virtual bool IsObjectHoldOnUse(GameObject obj)
@@ -323,34 +324,37 @@ namespace VRTK
 
         protected virtual void UseInteractedObject(GameObject touchedObject)
         {
-            if ((usingObject == null || usingObject != touchedObject) && IsObjectUsable(touchedObject))
+            if ((usingObject == null || usingObject != touchedObject) && IsObjectUsable(touchedObject) && interactTouch != null)
             {
                 usingObject = touchedObject;
                 OnControllerStartUseInteractableObject(interactTouch.SetControllerInteractEvent(usingObject));
-                VRTK_InteractableObject usingObjectScript = usingObject.GetComponent<VRTK_InteractableObject>();
+                VRTK_InteractableObject usingObjectScript = (usingObject != null ? usingObject.GetComponent<VRTK_InteractableObject>() : null);
 
-                if (!usingObjectScript.IsValidInteractableController(controllerReference.scriptAlias, usingObjectScript.allowedUseControllers))
+                if (usingObjectScript != null)
                 {
-                    usingObject = null;
-                    return;
-                }
+                    if (!usingObjectScript.IsValidInteractableController(gameObject, usingObjectScript.allowedUseControllers))
+                    {
+                        usingObject = null;
+                        return;
+                    }
 
-                usingObjectScript.StartUsing(controllerReference.scriptAlias);
-                ToggleControllerVisibility(false);
-                AttemptHaptics();
-                OnControllerUseInteractableObject(interactTouch.SetControllerInteractEvent(usingObject));
+                    usingObjectScript.StartUsing(this);
+                    ToggleControllerVisibility(false);
+                    AttemptHaptics();
+                    OnControllerUseInteractableObject(interactTouch.SetControllerInteractEvent(usingObject));
+                }
             }
         }
 
         protected virtual void UnuseInteractedObject(bool completeStop)
         {
-            if (usingObject != null)
+            if (usingObject != null && interactTouch != null)
             {
                 OnControllerStartUnuseInteractableObject(interactTouch.SetControllerInteractEvent(usingObject));
                 VRTK_InteractableObject usingObjectCheck = usingObject.GetComponent<VRTK_InteractableObject>();
                 if (usingObjectCheck != null && completeStop)
                 {
-                    usingObjectCheck.StopUsing(controllerReference.scriptAlias);
+                    usingObjectCheck.StopUsing(this);
                 }
                 ToggleControllerVisibility(true);
                 OnControllerUnuseInteractableObject(interactTouch.SetControllerInteractEvent(usingObject));
@@ -375,17 +379,17 @@ namespace VRTK
 
         protected virtual void AttemptUseObject()
         {
-            GameObject touchedObject = interactTouch.GetTouchedObject();
+            GameObject touchedObject = (interactTouch != null ? interactTouch.GetTouchedObject() : null);
             if (touchedObject == null)
             {
                 touchedObject = GetFromGrab();
             }
 
-            if (touchedObject != null && interactTouch.IsObjectInteractable(touchedObject))
+            if (touchedObject != null && interactTouch != null && interactTouch.IsObjectInteractable(touchedObject))
             {
                 VRTK_InteractableObject interactableObjectScript = touchedObject.GetComponent<VRTK_InteractableObject>();
 
-                if (interactableObjectScript.useOnlyIfGrabbed && !interactableObjectScript.IsGrabbed())
+                if (interactableObjectScript != null && interactableObjectScript.useOnlyIfGrabbed && !interactableObjectScript.IsGrabbed())
                 {
                     return;
                 }
