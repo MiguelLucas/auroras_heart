@@ -14,6 +14,10 @@ problems you encounter, but beware of the consequences.
 # Overview
 Check some videos [here](https://www.youtube.com/playlist?list=PL0ESwRe-UpiLHowOu0vHDyskvulGUTKnE).
 
+Main Menu                  |  Chest Interaction       |  Climb Mountain
+:-------------------------:|:------------------------:|:-------------------------:
+![Main Menu](img/intro.gif "Main Menu")  |  ![Chest](img/chest.gif "Chest")  |  ![Climb](img/climb.gif "Climb")
+
 ![](img/Diapositivo1.JPG)
 ![](img/Diapositivo2.JPG)
 ![](img/Diapositivo3.JPG)
